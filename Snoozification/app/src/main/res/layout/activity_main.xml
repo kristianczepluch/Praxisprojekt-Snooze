@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:beaconConsumerApplication="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundFragment"
+    tools:context=".Activities.SetupActivity">
+
+    <TextView
+        android:id="@+id/registrierungstext_view"
+        android:layout_width="227dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Wie ist dein Name?"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.084" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/registrierungstext_view"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.04000002">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/boy" />
+
+    <EditText
+        android:id="@+id/benutzername_editText"
+        android:layout_width="221dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedit"
+        android:ems="10"
+        android:hint="Benutzername"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="16sp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.789"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/registrierungstext_view"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.092" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/bar_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="23dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="32dp"
+    android:text="App wird vorbereitet.."
+    android:textColor="#ffffff"
+    beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+    beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+    beaconConsumerApplication:layout_constraintHorizontal_bias="0.5"
+    beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+    beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/setup_progressBar" />
+
+<ProgressBar
+    android:id="@+id/setup_progressBar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="220dp"
+    android:layout_marginEnd="8dp"
+    android:progressDrawable="@drawable/circlebar"
+    beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+    beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+    beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+<Button
+    android:id="@+id/finish_btn"
+    android:layout_width="136dp"
+    android:layout_height="46dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/roundedbutton"
+    android:text="Fertig"
+    android:textColor="#ffffff"
+    beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+    beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+    beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+    beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+    beaconConsumerApplication:layout_constraintVertical_bias="0.92" />
+
+<ProgressBar
+    android:id="@+id/progressBar_finish"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    beaconConsumerApplication:layout_constraintBottom_toBottomOf="@+id/finish_btn"
+    beaconConsumerApplication:layout_constraintEnd_toEndOf="@+id/finish_btn"
+    beaconConsumerApplication:layout_constraintStart_toStartOf="@+id/finish_btn"
+    beaconConsumerApplication:layout_constraintTop_toTopOf="@+id/finish_btn" />
+</android.support.constraint.ConstraintLayout>

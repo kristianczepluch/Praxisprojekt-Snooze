@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:beaconConsumerApplication="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="41dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/boy"
+                beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+                beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+                beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+                beaconConsumerApplication:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/contactsname_item_textView"
+        android:layout_width="140sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:text="Contacts Name"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toStartOf="@+id/username_item_textView"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/username_item_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Benutzername"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.498"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.0" />
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:beaconConsumerApplication="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundFragment"
+    tools:context=".Activities.LoginActivity">
+
+    <Button
+        android:id="@+id/verification_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbutton"
+        android:text="verify"
+        android:textColor="#ffffff"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.814"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.95" />
+
+    <EditText
+        android:id="@+id/verification_textInput"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Verficationcode"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toStartOf="@+id/verification_btn"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.528"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.943" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/enterNumber_textView"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.050000012">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+            beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+            beaconConsumerApplication:layout_constraintHorizontal_bias="0.103"
+            beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+            beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/enterNumber_textView"
+            beaconConsumerApplication:layout_constraintVertical_bias="0.073"
+            beaconConsumerApplication:srcCompat="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/phoneNumber_editText"
+            android:paddingLeft="10dp"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="76dp"
+            android:background="@drawable/roundedit"
+            android:ems="10"
+            android:inputType="phone"
+            android:text=" +49"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="16dp"
+            beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+            beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+            beaconConsumerApplication:layout_constraintHorizontal_bias="0.822"
+            beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+            beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/enterNumber_textView"
+            beaconConsumerApplication:layout_constraintVertical_bias="0.35" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterNumber_textView"
+        android:layout_width="300dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="Logge dich mit deiner Telefonnummer ein!"
+        android:textColor="#ffffff"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.472"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/imageView3"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/signIn_btn"
+        android:layout_width="136dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Sign in  "
+        android:textColor="#ffffff"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.5"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.28" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="201dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="parent"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="parent"
+        beaconConsumerApplication:layout_constraintHorizontal_bias="0.5"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="parent"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="parent"
+        beaconConsumerApplication:layout_constraintVertical_bias="0.118"
+        beaconConsumerApplication:srcCompat="@drawable/ic_notifications_paused_black_24dp" />
+
+    <ProgressBar
+        android:id="@+id/login_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        beaconConsumerApplication:layout_constraintBottom_toBottomOf="@+id/signIn_btn"
+        beaconConsumerApplication:layout_constraintEnd_toEndOf="@+id/signIn_btn"
+        beaconConsumerApplication:layout_constraintStart_toStartOf="@+id/signIn_btn"
+        beaconConsumerApplication:layout_constraintTop_toTopOf="@+id/signIn_btn" />
+
+</android.support.constraint.ConstraintLayout>

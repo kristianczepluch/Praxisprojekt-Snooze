@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464992951752",
+    "firebase_url": "https://snoozification.firebaseio.com",
+    "project_id": "snoozification",
+    "storage_bucket": "snoozification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464992951752:android:2e650bf7b578b61b",
+        "android_client_info": {
+          "package_name": "com.kristian.czepluch.snoozification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464992951752-l6lhbchfgq01e062or1iqehmakub3dfk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kristian.czepluch.snoozification",
+            "certificate_hash": "ac6c69647665340b6bb00c20a002b8588df89454"
+          }
+        },
+        {
+          "client_id": "464992951752-c8u418ri8f32dn0rcll35f9ltojjgulf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3MznnJzu6Le4sWoWpm6phGPkCaqoctrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464992951752-c8u418ri8f32dn0rcll35f9ltojjgulf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

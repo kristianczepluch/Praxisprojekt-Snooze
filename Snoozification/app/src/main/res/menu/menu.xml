@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:beaconConsumerApplication="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/contacts_sync"
+        android:title="Kontakte synchronisiern"
+        beaconConsumerApplication:showAsAction="never"
+
+        ><solid android:color="#FF2070B0" /></item>
+
+    <item android:id="@+id/app_sync"
+        android:title="Applikationen synchronisieren"
+        beaconConsumerApplication:showAsAction="never"
+        ><solid android:color="#FF2070B0" /></item>
+</menu>
